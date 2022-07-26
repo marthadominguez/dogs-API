@@ -1,0 +1,19 @@
+NOTAS:
+
+1. Crear index html y archivo de js. 
+2. En el archvio de js, cargar la ruta con fetch. 
+3. Método res.json() : Note that despite the method being named json(), the result is not JSON but is instead the result of taking JSON as input and parsing it to produce a JavaScript object.
+
+- implementar endpoints y query parameters, este depende de la API. 
+
+HTTP Status Codes
+    1XX Respuestas Afirmativas
+    2XX Respuestas satisfactorias
+    3XX Re-direcciones
+    4XX Error del cliente
+    5XX Error de servidor
+
+- Qué es una API KEY: Son un método de autenticación para identificar quién está haciendo la solicitud a los endpoints de una API. 
+Cómo se envían las API Keys? Se pueden enviar de muchas maneras, a través del authorization header, a través de un query parameter (en la API_URL), a través de Basic Auth, Body Data, Custom Header, etc. 
+
+

@@ -4,17 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Dog API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Random Dogs</title>
 </head>
 
 <body>
-    <h1>Dog API</h1>
-    <img width="150" alt="Random Dog Photo">
-    <button onclick="reload()">Reload</button>
+    <header>
+        <p>Welcome</p>
+        <li>
+            <ul>Home</ul>
+            <ul>About Me</ul>
+        </li>
+    </header>
+    <section id="randomDogs">
+        <h1>Random Dog Generator 🐶</h1>
+        <span id="error"> </span>
+        <div class="randomDog__container">
+            <div class="randomDog__item">
+                <div class="image__container">
+                    <img id="img1" width="150" alt="Random Dog Photo">
+                </div>
+                <button class="fav__button" onclick="reload()"><span class="iconify"
+                        data-icon="uil:favorite"></span></button>
+                <button class="reload__button" onclick="loadRandomDogs()">Reload</button>
+            </div>
+        </div>
+    </section>
+    <section id="favDogs">
+        <h1>Favorite Dogs</h1>
+        <div class="randomDog__container">
+            <div class="randomDog__item">
+                <div class="image__container">
+                    <img id="img1" width="150" alt="Random Dog Photo">
+                </div>
+                <button class="fav__button" onclick="reload()"><span class="iconify"
+                        data-icon="uil:favorite"></span></button>
+                <button class="reload__button" onclick="reload()">Reload</button>
+            </div>
+        </div>
+    </section>
     <script src="./main.js"></script>
-
 </body>
-
-</html>
